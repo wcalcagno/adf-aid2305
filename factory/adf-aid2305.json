@@ -1,0 +1,9 @@
+{
+	"name": "adf-aid2305",
+	"location": "southcentralus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "46176de0-5f25-4136-b8de-c506ea2a7b40",
+		"tenantId": "54c99288-570f-4357-8ec5-86bd173a4960"
+	}
+}
