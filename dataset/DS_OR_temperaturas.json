@@ -5,6 +5,11 @@
 			"referenceName": "GitHub_MinCiencias",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"periodo": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
