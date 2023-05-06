@@ -1,5 +1,5 @@
 {
-	"name": "DS_DT_CambioClimatico_Dinamico",
+	"name": "DS_DT_Viento_Dinamico",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "ADLS_dayanag",
