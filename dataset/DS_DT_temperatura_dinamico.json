@@ -16,7 +16,7 @@
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"fileName": {
-					"value": "@concat(\n\n    dataset().periodo,'_temperatura_dmc.csv'\n\n)",
+					"value": "@concat(\n\ndataset().periodo,'_temperatura_dmc.csv'\n\n)",
 					"type": "Expression"
 				},
 				"folderPath": {
