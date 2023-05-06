@@ -5,6 +5,9 @@
 			"referenceName": "GitHub_MinCiencias",
 			"type": "LinkedServiceReference"
 		},
+		"folder": {
+			"name": "DS_Estaticos"
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
