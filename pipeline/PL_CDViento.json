@@ -89,12 +89,36 @@
 										},
 										{
 											"source": {
-												"name": "Ts_Valor",
+												"name": "dd_Valor",
 												"type": "String",
 												"physicalType": "String"
 											},
 											"sink": {
-												"name": "Ts_Valor",
+												"name": "dd_Valor",
+												"type": "String",
+												"physicalType": "String"
+											}
+										},
+										{
+											"source": {
+												"name": "ff_Valor",
+												"type": "String",
+												"physicalType": "String"
+											},
+											"sink": {
+												"name": "ff_Valor",
+												"type": "String",
+												"physicalType": "String"
+											}
+										},
+										{
+											"source": {
+												"name": "VRB_Valor",
+												"type": "String",
+												"physicalType": "String"
+											},
+											"sink": {
+												"name": "VRB_Valor",
 												"type": "String",
 												"physicalType": "String"
 											}
