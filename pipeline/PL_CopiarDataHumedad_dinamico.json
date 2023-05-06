@@ -133,26 +133,14 @@
 							},
 							"inputs": [
 								{
-									"referenceName": "DS_OR_temperatura_dinamico",
-									"type": "DatasetReference",
-									"parameters": {
-										"periodo": {
-											"value": "@item()",
-											"type": "Expression"
-										}
-									}
+									"referenceName": "DS_OR_humedad_dinamico",
+									"type": "DatasetReference"
 								}
 							],
 							"outputs": [
 								{
-									"referenceName": "DS_DT_temperatura_dinamico",
-									"type": "DatasetReference",
-									"parameters": {
-										"periodo": {
-											"value": "@item()",
-											"type": "Expression"
-										}
-									}
+									"referenceName": "DS_DT_humedad_dinamico",
+									"type": "DatasetReference"
 								}
 							]
 						}
@@ -164,6 +152,9 @@
 			"periodo": {
 				"type": "array"
 			}
+		},
+		"folder": {
+			"name": "Humedad"
 		},
 		"annotations": []
 	}
