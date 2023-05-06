@@ -10,6 +10,9 @@
 				"type": "string"
 			}
 		},
+		"folder": {
+			"name": "DS Dinamicos"
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {

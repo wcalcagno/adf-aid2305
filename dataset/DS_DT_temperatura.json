@@ -5,6 +5,9 @@
 			"referenceName": "ADLS_YEIVISB",
 			"type": "LinkedServiceReference"
 		},
+		"folder": {
+			"name": "DS_estatico"
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
