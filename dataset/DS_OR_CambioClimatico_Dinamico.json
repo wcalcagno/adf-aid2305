@@ -14,7 +14,11 @@
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "HttpServerLocation"
+				"type": "HttpServerLocation",
+				"relativeUrl": {
+					"value": "@concat(\n    'Datos-CambioClimatico/main/output/viento_dmc/',\n    dataset().periodo,\n    '/',\n    dataset().periodo,\n    '_viento_dmc.csv'\n)",
+					"type": "Expression"
+				}
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
