@@ -11,7 +11,7 @@
 			}
 		},
 		"folder": {
-			"name": "DS_Viento"
+			"name": "DS_Humedad"
 		},
 		"annotations": [],
 		"type": "DelimitedText",
