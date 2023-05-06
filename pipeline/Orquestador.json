@@ -1,0 +1,66 @@
+{
+	"name": "Orquestador",
+	"properties": {
+		"activities": [
+			{
+				"name": "Execute Viento",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "PL_CDViento_dinamico",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true
+				}
+			},
+			{
+				"name": "Execute Humedad",
+				"type": "ExecutePipeline",
+				"dependsOn": [
+					{
+						"activity": "Execute Viento",
+						"dependencyConditions": [
+							"Completed"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "PL_CDHumedad_dinamico",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true
+				}
+			},
+			{
+				"name": "Execute Temperatura",
+				"type": "ExecutePipeline",
+				"dependsOn": [
+					{
+						"activity": "Execute Humedad",
+						"dependencyConditions": [
+							"Completed"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "PL_CDTemp_dinamico",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true
+				}
+			}
+		],
+		"parameters": {
+			"per_orquestacion": {
+				"type": "string"
+			}
+		},
+		"annotations": []
+	}
+}
