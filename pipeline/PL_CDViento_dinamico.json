@@ -6,9 +6,185 @@
 				"name": "ForEach1",
 				"type": "ForEach",
 				"dependsOn": [],
-				"userProperties": []
+				"userProperties": [
+					{
+						"name": ""
+					}
+				],
+				"typeProperties": {
+					"items": {
+						"value": "@pipeline().parameters.year",
+						"type": "Expression"
+					},
+					"activities": [
+						{
+							"name": "Copy data1",
+							"type": "Copy",
+							"dependsOn": [],
+							"policy": {
+								"timeout": "0.12:00:00",
+								"retry": 0,
+								"retryIntervalInSeconds": 30,
+								"secureOutput": false,
+								"secureInput": false
+							},
+							"userProperties": [],
+							"typeProperties": {
+								"source": {
+									"type": "DelimitedTextSource",
+									"storeSettings": {
+										"type": "HttpReadSettings",
+										"requestMethod": "GET"
+									},
+									"formatSettings": {
+										"type": "DelimitedTextReadSettings"
+									}
+								},
+								"sink": {
+									"type": "DelimitedTextSink",
+									"storeSettings": {
+										"type": "AzureBlobFSWriteSettings"
+									},
+									"formatSettings": {
+										"type": "DelimitedTextWriteSettings",
+										"quoteAllText": true,
+										"fileExtension": ".txt"
+									}
+								},
+								"enableStaging": false,
+								"translator": {
+									"type": "TabularTranslator",
+									"mappings": [
+										{
+											"source": {
+												"type": "String",
+												"ordinal": 1
+											},
+											"sink": {
+												"type": "String",
+												"physicalType": "String",
+												"ordinal": 1
+											}
+										},
+										{
+											"source": {
+												"type": "String",
+												"ordinal": 2
+											},
+											"sink": {
+												"type": "String",
+												"physicalType": "String",
+												"ordinal": 2
+											}
+										},
+										{
+											"source": {
+												"type": "String",
+												"ordinal": 3
+											},
+											"sink": {
+												"type": "String",
+												"physicalType": "String",
+												"ordinal": 3
+											}
+										},
+										{
+											"source": {
+												"type": "String",
+												"ordinal": 4
+											},
+											"sink": {
+												"type": "String",
+												"physicalType": "String",
+												"ordinal": 4
+											}
+										},
+										{
+											"source": {
+												"type": "String",
+												"ordinal": 5
+											},
+											"sink": {
+												"type": "String",
+												"physicalType": "String",
+												"ordinal": 5
+											}
+										},
+										{
+											"source": {
+												"type": "String",
+												"ordinal": 6
+											},
+											"sink": {
+												"type": "String",
+												"physicalType": "String",
+												"ordinal": 6
+											}
+										},
+										{
+											"source": {
+												"type": "String",
+												"ordinal": 7
+											},
+											"sink": {
+												"type": "String",
+												"physicalType": "String",
+												"ordinal": 7
+											}
+										},
+										{
+											"source": {
+												"type": "String",
+												"ordinal": 8
+											},
+											"sink": {
+												"type": "String",
+												"physicalType": "String",
+												"ordinal": 8
+											}
+										}
+									],
+									"typeConversion": true,
+									"typeConversionSettings": {
+										"allowDataTruncation": true,
+										"treatBooleanAsNumber": false
+									}
+								}
+							},
+							"inputs": [
+								{
+									"referenceName": "DS_OR_GitHub_viento",
+									"type": "DatasetReference",
+									"parameters": {
+										"year": {
+											"value": "@item()",
+											"type": "Expression"
+										}
+									}
+								}
+							],
+							"outputs": [
+								{
+									"referenceName": "DS_DT_viento_dinamico",
+									"type": "DatasetReference",
+									"parameters": {
+										"year": {
+											"value": "@item()",
+											"type": "Expression"
+										}
+									}
+								}
+							]
+						}
+					]
+				}
 			}
 		],
+		"parameters": {
+			"year": {
+				"type": "array"
+			}
+		},
 		"annotations": []
 	}
 }
