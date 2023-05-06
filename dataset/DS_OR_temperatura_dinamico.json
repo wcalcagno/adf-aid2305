@@ -1,0 +1,27 @@
+{
+	"name": "DS_OR_temperatura_dinamico",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "GitHub_MinCiencias",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"periodo": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "Datos-CambioClimatico/main/output/temperatura_dmc/2015/2015_temperatura_dmc.csv"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
