@@ -1,0 +1,35 @@
+{
+	"name": "DS_DT_temperatura_dinamico",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ADLSFMESA",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"periodo": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@concat(\n    dataset().periodo,\n    '_temperatura_dmc.csv'\n)",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@concat(\n    'Datos-CambioClimatico/main/output/temperatura_dmc/',\n    dataset().periodo,\n    '/'\n)",
+					"type": "Expression"
+				},
+				"fileSystem": "raw"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
