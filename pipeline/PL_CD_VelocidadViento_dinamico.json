@@ -1,9 +1,23 @@
 {
 	"name": "PL_CD_VelocidadViento_dinamico",
 	"properties": {
+		"activities": [
+			{
+				"name": "ForEach1",
+				"type": "ForEach",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "@pipeline().parameters.periodo",
+						"type": "Expression"
+					}
+				}
+			}
+		],
 		"parameters": {
 			"periodo": {
-				"type": "string"
+				"type": "array"
 			}
 		},
 		"annotations": []
