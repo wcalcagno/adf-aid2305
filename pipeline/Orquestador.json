@@ -1,0 +1,32 @@
+{
+	"name": "Orquestador",
+	"properties": {
+		"activities": [
+			{
+				"name": "Execute Pipeline1",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "PL_CDViento_Dinamico",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"periodo": {
+							"value": "@pipeline().parameters.per_orquestacion",
+							"type": "Expression"
+						}
+					}
+				}
+			}
+		],
+		"parameters": {
+			"per_orquestacion": {
+				"type": "array"
+			}
+		},
+		"annotations": []
+	}
+}
