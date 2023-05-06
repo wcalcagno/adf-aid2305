@@ -146,7 +146,13 @@
 							"outputs": [
 								{
 									"referenceName": "DS_DT_viento_dinamico",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"periodo": {
+											"value": "@item()",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						}
