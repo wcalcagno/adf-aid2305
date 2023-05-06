@@ -1,0 +1,27 @@
+{
+	"name": "DS_OR_viento",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "GitHub_MinCiencias",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"periodo": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "Datos-CambioClimatico/main/output/viento_dmc/1951/1951_viento_dmc.csv"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
