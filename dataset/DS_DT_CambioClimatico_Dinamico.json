@@ -1,0 +1,26 @@
+{
+	"name": "DS_DT_CambioClimatico_Dinamico",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ADLS_dayanag",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"periodo": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "bronze-raw-landing"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
