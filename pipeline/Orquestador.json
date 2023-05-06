@@ -72,23 +72,6 @@
 						}
 					}
 				}
-			},
-			{
-				"name": "Fail1",
-				"type": "Fail",
-				"dependsOn": [
-					{
-						"activity": "Ejecuta Viento",
-						"dependencyConditions": [
-							"Failed"
-						]
-					}
-				],
-				"userProperties": [],
-				"typeProperties": {
-					"message": "Equivocado",
-					"errorCode": "850"
-				}
 			}
 		],
 		"parameters": {
