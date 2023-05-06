@@ -133,26 +133,14 @@
 							},
 							"inputs": [
 								{
-									"referenceName": "DS_OR_temperatura_dinamico",
-									"type": "DatasetReference",
-									"parameters": {
-										"periodo": {
-											"value": "@item()",
-											"type": "Expression"
-										}
-									}
+									"referenceName": "DS_OR_viento_dinamico",
+									"type": "DatasetReference"
 								}
 							],
 							"outputs": [
 								{
-									"referenceName": "DS_DT_temperatura_dinamico",
-									"type": "DatasetReference",
-									"parameters": {
-										"periodo": {
-											"value": "@item()",
-											"type": "Expression"
-										}
-									}
+									"referenceName": "DS_DT_viento_dinamico",
+									"type": "DatasetReference"
 								}
 							]
 						}
