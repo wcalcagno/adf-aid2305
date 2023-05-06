@@ -3,13 +3,51 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Execute Pipeline1",
+				"name": "Viento",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
 				"typeProperties": {
 					"pipeline": {
 						"referenceName": "PL_CDViento_Dinamico",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"periodo": {
+							"value": "@pipeline().parameters.per_orquestacion",
+							"type": "Expression"
+						}
+					}
+				}
+			},
+			{
+				"name": "Humedad",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "PL_CDHumedad_Dinamico",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"periodo": {
+							"value": "@pipeline().parameters.per_orquestacion",
+							"type": "Expression"
+						}
+					}
+				}
+			},
+			{
+				"name": "Temperatura",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "PL_CDTemp_dinamico",
 						"type": "PipelineReference"
 					},
 					"waitOnCompletion": true,
