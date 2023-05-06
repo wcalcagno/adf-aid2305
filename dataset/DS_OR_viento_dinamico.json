@@ -1,19 +1,27 @@
 {
-	"name": "DS_OR_temperatura",
+	"name": "DS_OR_viento_dinamico",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "Github Min Ciencia",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"periodo": {
+				"type": "string"
+			}
+		},
 		"folder": {
-			"name": "Temperatura"
+			"name": "Viento"
 		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
 				"type": "HttpServerLocation",
-				"relativeUrl": "Datos-CambioClimatico/main/output/temperatura_dmc/2015/2015_temperatura_dmc.csv"
+				"relativeUrl": {
+					"value": "@concat(\n    'Datos-CambioClimatico/main/output/temperatura_dmc/',\n    dataset().periodo,\n    '/',\n    dataset().periodo,\n    '_temperatura_dmc.csv'\n)",
+					"type": "Expression"
+				}
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",

@@ -1,5 +1,5 @@
 {
-	"name": "DS_DT_temperatura_dinamico",
+	"name": "DS_DT_humedad_dinamico",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "ADLSFMESA",
@@ -11,7 +11,7 @@
 			}
 		},
 		"folder": {
-			"name": "Temperatura"
+			"name": "Humedad"
 		},
 		"annotations": [],
 		"type": "DelimitedText",
