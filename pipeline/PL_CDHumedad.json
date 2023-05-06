@@ -133,10 +133,10 @@
 							},
 							"inputs": [
 								{
-									"referenceName": "DS_OR_temperatura_dinamico",
+									"referenceName": "DS_OR_GitHub_humedad",
 									"type": "DatasetReference",
 									"parameters": {
-										"periodo": {
+										"year": {
 											"value": "@item()",
 											"type": "Expression"
 										}
@@ -145,7 +145,7 @@
 							],
 							"outputs": [
 								{
-									"referenceName": "DS_DT_temperatura_dinamico",
+									"referenceName": "DS_DT_humedad",
 									"type": "DatasetReference",
 									"parameters": {
 										"periodo": {
