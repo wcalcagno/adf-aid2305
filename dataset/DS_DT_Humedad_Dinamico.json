@@ -1,0 +1,35 @@
+{
+	"name": "DS_DT_Humedad_Dinamico",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ADLS_dayanag",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"periodo": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@concat(\n    dataset().periodo,'_humedad_dmc.csv'\n)\n",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@concat(\n    'Datos-CambioClimatico/main/output/humedad_dmc/',\n    dataset().periodo\n)\n",
+					"type": "Expression"
+				},
+				"fileSystem": "bronze-raw-landing"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
