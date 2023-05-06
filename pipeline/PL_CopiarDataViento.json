@@ -8,6 +8,10 @@
 				"dependsOn": [],
 				"userProperties": [],
 				"typeProperties": {
+					"items": {
+						"value": "@pipeline().parameters.periodo",
+						"type": "Expression"
+					},
 					"activities": [
 						{
 							"name": "CD_Viento",
