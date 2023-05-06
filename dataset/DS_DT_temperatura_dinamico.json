@@ -15,6 +15,14 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@concat(\n    dataset().periodo,\n    '_temperatura_dmc.csv'\n)",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@concat(\n    'Datos-CambioClimatico/main/output/temperatura_dmc/',\n    dataset().periodo\n)",
+					"type": "Expression"
+				},
 				"fileSystem": "bronze"
 			},
 			"columnDelimiter": ",",
