@@ -1,0 +1,30 @@
+{
+	"name": "DS_OR_Viento_Dinamico_copy1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "GitHub_MinCiencias",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"periodo": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": {
+					"value": "@concat(\n    'Datos-CambioClimatico/main/output/humedad_dmc/',\n    dataset().periodo,\n    '/',\n    dataset().periodo,\n    '_humedad_dmc.csv'\n)",
+					"type": "Expression"
+				}
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
