@@ -5,6 +5,11 @@
 			"referenceName": "ADLS_RGONZALEZ",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"Periodo": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
