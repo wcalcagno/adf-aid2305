@@ -15,7 +15,10 @@
 		"typeProperties": {
 			"location": {
 				"type": "HttpServerLocation",
-				"relativeUrl": "Datos-CambioClimatico/main/output/viento_dmc/1951/1951_viento_dmc.csv"
+				"relativeUrl": {
+					"value": "@concat(\n    'Datos-CambioClimatico/main/output/viento_dmc/',dataset().periodo,'/',dataset().periodo,'_viento_dmc.csv'\n)",
+					"type": "Expression"
+				}
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
