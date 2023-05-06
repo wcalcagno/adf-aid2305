@@ -1,6 +1,20 @@
 {
 	"name": "PL_CDTemp_Dinamico",
 	"properties": {
+		"activities": [
+			{
+				"name": "ForEach1",
+				"type": "ForEach",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "@pipeline().parameters.periodo",
+						"type": "Expression"
+					}
+				}
+			}
+		],
 		"parameters": {
 			"periodo": {
 				"type": "array"
