@@ -1,0 +1,11 @@
+{
+	"name": "PL_CopiarDataViento",
+	"properties": {
+		"parameters": {
+			"periodo": {
+				"type": "array"
+			}
+		},
+		"annotations": []
+	}
+}
