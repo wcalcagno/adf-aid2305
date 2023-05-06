@@ -2,7 +2,7 @@
 	"name": "DS_OR_CambioClimatico_Dinamico",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "ADLS_dayanag",
+			"referenceName": "GitHub_MinCiencias",
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
@@ -14,8 +14,7 @@
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "AzureBlobFSLocation",
-				"fileSystem": "bronze-raw-landing"
+				"type": "HttpServerLocation"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
