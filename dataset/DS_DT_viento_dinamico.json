@@ -1,0 +1,35 @@
+{
+	"name": "DS_DT_viento_dinamico",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ADLS_DPASTORINI",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"periodo": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@concat(\n    dataset().periodo,'_viento_dmc.csv'\n)",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@concat(\n    'Datos-CambioClimatico/main/output/viento_dmc/',\n    dataset().periodo\n)",
+					"type": "Expression"
+				},
+				"fileSystem": "blandingbronce"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
