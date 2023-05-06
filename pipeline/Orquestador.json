@@ -1,0 +1,84 @@
+{
+	"name": "Orquestador",
+	"properties": {
+		"activities": [
+			{
+				"name": "Execute PL Viento",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "PL_CD_VelocidadViento_dinamico",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"periodo": {
+							"value": "@pipeline().parameters.orq_periodo",
+							"type": "Expression"
+						}
+					}
+				}
+			},
+			{
+				"name": "Execute PL Humedad",
+				"type": "ExecutePipeline",
+				"dependsOn": [
+					{
+						"activity": "Execute PL Viento",
+						"dependencyConditions": [
+							"Completed"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "PL_CD_HumedadRelativa_dinamica",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"periodo": {
+							"value": "@pipeline().parameters.orq_periodo",
+							"type": "Expression"
+						}
+					}
+				}
+			},
+			{
+				"name": "Execute PL Temperatura",
+				"type": "ExecutePipeline",
+				"dependsOn": [
+					{
+						"activity": "Execute PL Humedad",
+						"dependencyConditions": [
+							"Completed"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "PL_CDTemperatura_dinamico",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"periodo": {
+							"value": "@pipeline().parameters.orq_periodo",
+							"type": "Expression"
+						}
+					}
+				}
+			}
+		],
+		"parameters": {
+			"orq_periodo": {
+				"type": "array"
+			}
+		},
+		"annotations": []
+	}
+}
