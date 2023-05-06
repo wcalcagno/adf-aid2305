@@ -1,5 +1,5 @@
 {
-	"name": "PL_CopiarDataViento",
+	"name": "PL_CDViento_Dinamico",
 	"properties": {
 		"activities": [
 			{
