@@ -1,5 +1,5 @@
 {
-	"name": "DS_OR_CambioClimatico_Dinamico",
+	"name": "DS_OR_Viento_Dinamico",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "GitHub_MinCiencias",
