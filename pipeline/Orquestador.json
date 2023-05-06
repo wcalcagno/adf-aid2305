@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Viento",
+				"name": "Ejecuta_Viento",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -22,7 +22,7 @@
 				}
 			},
 			{
-				"name": "Humedad",
+				"name": "Ejecuta_Humedad",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -41,7 +41,7 @@
 				}
 			},
 			{
-				"name": "Temperatura",
+				"name": "Ejecuta_Temperatura",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
