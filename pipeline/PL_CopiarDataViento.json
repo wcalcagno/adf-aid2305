@@ -46,6 +46,104 @@
 								"enableStaging": false,
 								"translator": {
 									"type": "TabularTranslator",
+									"mappings": [
+										{
+											"source": {
+												"name": "time",
+												"type": "String",
+												"physicalType": "String"
+											},
+											"sink": {
+												"name": "time",
+												"type": "String",
+												"physicalType": "String"
+											}
+										},
+										{
+											"source": {
+												"name": "latitud",
+												"type": "String",
+												"physicalType": "String"
+											},
+											"sink": {
+												"name": "latitud",
+												"type": "String",
+												"physicalType": "String"
+											}
+										},
+										{
+											"source": {
+												"name": "longitud",
+												"type": "String",
+												"physicalType": "String"
+											},
+											"sink": {
+												"name": "longitud",
+												"type": "String",
+												"physicalType": "String"
+											}
+										},
+										{
+											"source": {
+												"name": "dd_Valor",
+												"type": "String",
+												"physicalType": "String"
+											},
+											"sink": {
+												"name": "dd_Valor",
+												"type": "String",
+												"physicalType": "String"
+											}
+										},
+										{
+											"source": {
+												"name": "ff_Valor",
+												"type": "String",
+												"physicalType": "String"
+											},
+											"sink": {
+												"name": "ff_Valor",
+												"type": "String",
+												"physicalType": "String"
+											}
+										},
+										{
+											"source": {
+												"name": "VRB_Valor",
+												"type": "String",
+												"physicalType": "String"
+											},
+											"sink": {
+												"name": "VRB_Valor",
+												"type": "String",
+												"physicalType": "String"
+											}
+										},
+										{
+											"source": {
+												"name": "CodigoNacional",
+												"type": "String",
+												"physicalType": "String"
+											},
+											"sink": {
+												"name": "CodigoNacional",
+												"type": "String",
+												"physicalType": "String"
+											}
+										},
+										{
+											"source": {
+												"name": "nombreEstacion",
+												"type": "String",
+												"physicalType": "String"
+											},
+											"sink": {
+												"name": "nombreEstacion",
+												"type": "String",
+												"physicalType": "String"
+											}
+										}
+									],
 									"typeConversion": true,
 									"typeConversionSettings": {
 										"allowDataTruncation": true,
@@ -56,7 +154,13 @@
 							"inputs": [
 								{
 									"referenceName": "DS_OR_Viento_Dinamico",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"periodo": {
+											"value": "@item()",
+											"type": "Expression"
+										}
+									}
 								}
 							],
 							"outputs": [
