@@ -1,0 +1,22 @@
+{
+	"name": "DS_DT_Temperatura",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ADLS_RGONZALEZ",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "rawland"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
