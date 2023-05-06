@@ -1,0 +1,13 @@
+{
+	"name": "GitHub_MinCiencias",
+	"properties": {
+		"description": "Conexión con el GitHub del Ministerio de Ciencias",
+		"annotations": [],
+		"type": "HttpServer",
+		"typeProperties": {
+			"url": "https://raw.githubusercontent.com/MinCiencia",
+			"enableServerCertificateValidation": false,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
