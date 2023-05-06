@@ -89,12 +89,12 @@
 										},
 										{
 											"source": {
-												"name": "Ts_Valor",
+												"name": "HR_Valor",
 												"type": "String",
 												"physicalType": "String"
 											},
 											"sink": {
-												"name": "Ts_Valor",
+												"name": "HR_Valor",
 												"type": "String",
 												"physicalType": "String"
 											}
