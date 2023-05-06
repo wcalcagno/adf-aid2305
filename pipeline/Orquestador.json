@@ -24,7 +24,14 @@
 			{
 				"name": "Ejecuta Humedad",
 				"type": "ExecutePipeline",
-				"dependsOn": [],
+				"dependsOn": [
+					{
+						"activity": "Ejecuta Viento",
+						"dependencyConditions": [
+							"Completed"
+						]
+					}
+				],
 				"userProperties": [],
 				"typeProperties": {
 					"pipeline": {
@@ -43,7 +50,14 @@
 			{
 				"name": "Ejecuta Temperatura",
 				"type": "ExecutePipeline",
-				"dependsOn": [],
+				"dependsOn": [
+					{
+						"activity": "Ejecuta Humedad",
+						"dependencyConditions": [
+							"Completed"
+						]
+					}
+				],
 				"userProperties": [],
 				"typeProperties": {
 					"pipeline": {
@@ -57,6 +71,23 @@
 							"type": "Expression"
 						}
 					}
+				}
+			},
+			{
+				"name": "Fail1",
+				"type": "Fail",
+				"dependsOn": [
+					{
+						"activity": "Ejecuta Viento",
+						"dependencyConditions": [
+							"Failed"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"message": "Equivocado",
+					"errorCode": "850"
 				}
 			}
 		],
