@@ -7,7 +7,7 @@
 		},
 		"parameters": {
 			"periodo": {
-				"type": "string"
+				"type": "array"
 			}
 		},
 		"annotations": [],
