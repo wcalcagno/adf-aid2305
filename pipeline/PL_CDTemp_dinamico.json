@@ -1,6 +1,11 @@
 {
 	"name": "PL_CDTemp_dinamico",
 	"properties": {
+		"parameters": {
+			"periodo": {
+				"type": "array"
+			}
+		},
 		"annotations": []
 	}
 }
