@@ -1,0 +1,11 @@
+{
+	"name": "PL_CDTemperatura_dinamico",
+	"properties": {
+		"parameters": {
+			"periodo": {
+				"type": "array"
+			}
+		},
+		"annotations": []
+	}
+}
