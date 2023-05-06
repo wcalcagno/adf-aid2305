@@ -39,6 +39,80 @@
 					"enableStaging": false,
 					"translator": {
 						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "time",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "time",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "latitud",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "latitud",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "longitud",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "longitud",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Ts_Valor",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Ts_Valor",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "CodigoNacional",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CodigoNacional",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "nombreEstacion",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "nombreEstacion",
+									"type": "String",
+									"physicalType": "String"
+								}
+							}
+						],
 						"typeConversion": true,
 						"typeConversionSettings": {
 							"allowDataTruncation": true,
