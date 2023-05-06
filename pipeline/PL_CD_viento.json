@@ -1,6 +1,11 @@
 {
 	"name": "PL_CD_viento",
 	"properties": {
+		"parameters": {
+			"periodo": {
+				"type": "array"
+			}
+		},
 		"annotations": []
 	}
 }
