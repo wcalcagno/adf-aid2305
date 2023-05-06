@@ -1,0 +1,22 @@
+{
+	"name": "DS_DT_temperatura",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ADLS_DPASTORINI",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "blandingbronce"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
