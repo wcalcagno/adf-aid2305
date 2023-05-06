@@ -133,7 +133,7 @@
 							},
 							"inputs": [
 								{
-									"referenceName": "DS_OR_temperatura_dinamico",
+									"referenceName": "DS_OR_humedad_dinamico",
 									"type": "DatasetReference",
 									"parameters": {
 										"periodo": {
@@ -145,7 +145,7 @@
 							],
 							"outputs": [
 								{
-									"referenceName": "DS_DT_temperatura_dinamico",
+									"referenceName": "DS_DT_humedad_dinamico",
 									"type": "DatasetReference",
 									"parameters": {
 										"periodo": {
