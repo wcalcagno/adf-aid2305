@@ -166,7 +166,13 @@
 							"outputs": [
 								{
 									"referenceName": "DS_DT_Viento_Dinamico",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"periodo": {
+											"value": "@item()",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						}
