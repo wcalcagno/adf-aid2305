@@ -14,7 +14,7 @@
 					},
 					"activities": [
 						{
-							"name": "CD_Viento",
+							"name": "CD_Humedad",
 							"type": "Copy",
 							"dependsOn": [],
 							"policy": {
@@ -89,36 +89,12 @@
 										},
 										{
 											"source": {
-												"name": "dd_Valor",
+												"name": "HR_Valor",
 												"type": "String",
 												"physicalType": "String"
 											},
 											"sink": {
-												"name": "dd_Valor",
-												"type": "String",
-												"physicalType": "String"
-											}
-										},
-										{
-											"source": {
-												"name": "ff_Valor",
-												"type": "String",
-												"physicalType": "String"
-											},
-											"sink": {
-												"name": "ff_Valor",
-												"type": "String",
-												"physicalType": "String"
-											}
-										},
-										{
-											"source": {
-												"name": "VRB_Valor",
-												"type": "String",
-												"physicalType": "String"
-											},
-											"sink": {
-												"name": "VRB_Valor",
+												"name": "HR_Valor",
 												"type": "String",
 												"physicalType": "String"
 											}
@@ -157,7 +133,7 @@
 							},
 							"inputs": [
 								{
-									"referenceName": "DS_OR_Viento_Dinamico",
+									"referenceName": "DS_OR_Humedad_Dinamico",
 									"type": "DatasetReference",
 									"parameters": {
 										"periodo": {
@@ -169,7 +145,7 @@
 							],
 							"outputs": [
 								{
-									"referenceName": "DS_DT_Viento_Dinamico",
+									"referenceName": "DS_DT_Humedad_Dinamico",
 									"type": "DatasetReference",
 									"parameters": {
 										"periodo": {
