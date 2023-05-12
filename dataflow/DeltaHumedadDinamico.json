@@ -26,11 +26,12 @@
 				"     fileList: true,",
 				"     format: 'delimited',",
 				"     fileSystem: 'landing',",
+				"     folderPath: 'Datos-CambioClimatico/main/output/humedad_dmc/1950',",
+				"     fileName: '1950_humedad_dmc.csv',",
 				"     columnDelimiter: ',',",
 				"     escapeChar: '\\\\',",
 				"     quoteChar: '\\\"',",
 				"     columnNamesAsHeader: true,",
-				"     wildcardPaths:[(concat('Datos-CambioClimatico/main/output/humedad_dmc/',$periodo,'/',$periodo,'_humedad_dmc.csv'))],",
 				"     partitionBy('hash', 2,",
 				"          ERROR_FUNCTION('')",
 				"     )) ~> source1"
