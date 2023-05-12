@@ -58,7 +58,13 @@
 							"inputs": [
 								{
 									"referenceName": "DS_OR_GitHub_viento_dinamico",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"year": {
+											"value": "@item()",
+											"type": "Expression"
+										}
+									}
 								}
 							],
 							"outputs": [
