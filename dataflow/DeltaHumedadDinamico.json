@@ -21,7 +21,6 @@
 				"source(useSchema: false,",
 				"     allowSchemaDrift: true,",
 				"     validateSchema: false,",
-				"     limit: 100,",
 				"     ignoreNoFilesFound: false,",
 				"     fileList: true,",
 				"     format: 'delimited',",
