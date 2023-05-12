@@ -13,6 +13,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
+				"fileName": "1951_temperatura_dmc.csv",
+				"folderPath": "Datos-CambioClimatico/main/output/temperatura_dmc/1951",
 				"fileSystem": "landing"
 			},
 			"columnDelimiter": ",",
