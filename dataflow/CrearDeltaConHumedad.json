@@ -1,5 +1,5 @@
 {
-	"name": "DeltaHumedad",
+	"name": "CrearDeltaConHumedad",
 	"properties": {
 		"type": "MappingDataFlow",
 		"typeProperties": {
