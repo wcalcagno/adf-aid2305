@@ -142,7 +142,13 @@
 							"outputs": [
 								{
 									"referenceName": "DS_Refined_humedad_parquet",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"periodo": {
+											"value": "@item()",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						}
