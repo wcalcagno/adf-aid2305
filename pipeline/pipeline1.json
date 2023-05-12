@@ -1,0 +1,11 @@
+{
+	"name": "pipeline1",
+	"properties": {
+		"parameters": {
+			"periodo": {
+				"type": "array"
+			}
+		},
+		"annotations": []
+	}
+}
