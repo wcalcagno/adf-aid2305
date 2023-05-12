@@ -5,9 +5,9 @@
 		"typeProperties": {
 			"sources": [
 				{
-					"dataset": {
-						"referenceName": "DS_DT_humedad",
-						"type": "DatasetReference"
+					"linkedService": {
+						"referenceName": "ADLS_WCALCAGNO",
+						"type": "LinkedServiceReference"
 					},
 					"name": "source1"
 				}
@@ -16,11 +16,19 @@
 			"transformations": [],
 			"scriptLines": [
 				"parameters{",
-				"     periodo as string ('1951')",
+				"     periodo as string",
 				"}",
-				"source(allowSchemaDrift: true,",
+				"source(useSchema: false,",
+				"     allowSchemaDrift: true,",
 				"     validateSchema: false,",
-				"     ignoreNoFilesFound: false) ~> source1"
+				"     ignoreNoFilesFound: false,",
+				"     format: 'delimited',",
+				"     fileSystem: 'landing',",
+				"     columnDelimiter: ',',",
+				"     escapeChar: '\\\\',",
+				"     quoteChar: '\\\"',",
+				"     columnNamesAsHeader: false,",
+				"     wildcardPaths:[(@concat($periodo,'/',$periodo,'_humedad_dmc.csv'))]) ~> source1"
 			]
 		}
 	}
