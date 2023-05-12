@@ -65,6 +65,11 @@
 				}
 			}
 		],
+		"parameters": {
+			"per_orquestacion": {
+				"type": "array"
+			}
+		},
 		"annotations": []
 	}
 }
