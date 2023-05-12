@@ -155,6 +155,9 @@
 				"type": "array"
 			}
 		},
+		"folder": {
+			"name": "PL_parquetizacion"
+		},
 		"annotations": []
 	}
 }
