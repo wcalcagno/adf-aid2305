@@ -10,6 +10,9 @@
 				"type": "string"
 			}
 		},
+		"folder": {
+			"name": "DS_Temperatura"
+		},
 		"annotations": [],
 		"type": "Parquet",
 		"typeProperties": {
