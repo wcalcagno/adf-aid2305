@@ -1,5 +1,5 @@
 {
-	"name": "DS_Refined_viento_parquet_copy1",
+	"name": "DS_Refined_viento_parquet",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "ADLS_DPASTORINI",
