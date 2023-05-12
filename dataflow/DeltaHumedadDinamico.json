@@ -16,19 +16,24 @@
 			"transformations": [],
 			"scriptLines": [
 				"parameters{",
-				"     periodo as string",
+				"     periodo as integer (1951)",
 				"}",
 				"source(useSchema: false,",
 				"     allowSchemaDrift: true,",
 				"     validateSchema: false,",
+				"     limit: 100,",
 				"     ignoreNoFilesFound: false,",
+				"     fileList: true,",
 				"     format: 'delimited',",
 				"     fileSystem: 'landing',",
 				"     columnDelimiter: ',',",
 				"     escapeChar: '\\\\',",
 				"     quoteChar: '\\\"',",
-				"     columnNamesAsHeader: false,",
-				"     wildcardPaths:[(@concat($periodo,'/',$periodo,'_humedad_dmc.csv'))]) ~> source1"
+				"     columnNamesAsHeader: true,",
+				"     wildcardPaths:[(concat('Datos-CambioClimatico/main/output/humedad_dmc/',$periodo,'/',$periodo,'_humedad_dmc.csv'))],",
+				"     partitionBy('hash', 2,",
+				"          ERROR_FUNCTION('')",
+				"     )) ~> source1"
 			]
 		}
 	}
