@@ -1,0 +1,11 @@
+{
+	"name": "PL_parquetizacion_humedad",
+	"properties": {
+		"parameters": {
+			"periodo": {
+				"type": "array"
+			}
+		},
+		"annotations": []
+	}
+}
