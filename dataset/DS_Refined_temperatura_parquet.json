@@ -15,6 +15,10 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@concat(\n\n'temperatura/',\n\ndataset().periodo,\n\n 'snappy.parquet'\n )",
+					"type": "Expression"
+				},
 				"folderPath": "Parquet_climatico",
 				"fileSystem": "silver"
 			},
