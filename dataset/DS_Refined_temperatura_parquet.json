@@ -2,7 +2,7 @@
 	"name": "DS_Refined_temperatura_parquet",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "ADLS_WCALCAGNO",
+			"referenceName": "ADLS_DPASTORINI",
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
@@ -20,7 +20,7 @@
 					"type": "Expression"
 				},
 				"folderPath": "parquet_climatico",
-				"fileSystem": "refined"
+				"fileSystem": "refinedsilver"
 			},
 			"compressionCodec": "snappy"
 		},
