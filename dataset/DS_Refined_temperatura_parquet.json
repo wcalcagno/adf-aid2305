@@ -5,6 +5,11 @@
 			"referenceName": "ADLS_AVELAZQUEZ",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"periodo": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "Parquet",
 		"typeProperties": {
