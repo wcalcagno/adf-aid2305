@@ -1,0 +1,11 @@
+{
+	"name": "PL_parquetizacion_temperatura",
+	"properties": {
+		"parameters": {
+			"periodo": {
+				"type": "array"
+			}
+		},
+		"annotations": []
+	}
+}
