@@ -17,15 +17,7 @@
 				"typeProperties": {
 					"dataflow": {
 						"referenceName": "DeltaHumedad",
-						"type": "DataFlowReference",
-						"datasetParameters": {
-							"source1": {
-								"periodo": {
-									"value": "@pipeline().parameters.periodo",
-									"type": "Expression"
-								}
-							}
-						}
+						"type": "DataFlowReference"
 					},
 					"compute": {
 						"coreCount": 8,
