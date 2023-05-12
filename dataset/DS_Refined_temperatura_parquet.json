@@ -1,0 +1,20 @@
+{
+	"name": "DS_Refined_temperatura_parquet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ADLS_dayanag",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "parquet_climatico",
+				"fileSystem": "silver-limpia-refined"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
