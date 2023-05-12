@@ -2,7 +2,7 @@
 	"name": "DS_DT_temperatura_dinamico",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "ADLS_WCALCAGNO",
+			"referenceName": "ADLS_MCARO",
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
