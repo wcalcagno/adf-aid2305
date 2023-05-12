@@ -16,7 +16,7 @@
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"fileName": {
-					"value": "@concat(dataset().year, '_viento_dmc.csv')",
+					"value": "@concat(dataset().year\n        , '_viento_dmc.csv'\n)\n\n",
 					"type": "Expression"
 				},
 				"folderPath": {
