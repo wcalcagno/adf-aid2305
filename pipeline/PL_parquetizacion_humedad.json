@@ -29,9 +29,8 @@
 								"source": {
 									"type": "DelimitedTextSource",
 									"storeSettings": {
-										"type": "AzureBlobFSReadSettings",
-										"recursive": true,
-										"enablePartitionDiscovery": false
+										"type": "HttpReadSettings",
+										"requestMethod": "GET"
 									},
 									"formatSettings": {
 										"type": "DelimitedTextReadSettings"
@@ -88,12 +87,12 @@
 										},
 										{
 											"source": {
-												"name": "Ts_Valor",
+												"name": "HR_Valor",
 												"type": "String",
 												"physicalType": "String"
 											},
 											"sink": {
-												"name": "Ts_Valor",
+												"name": "HR_Valor",
 												"type": "String",
 												"physicalType": "UTF8"
 											}
@@ -132,10 +131,10 @@
 							},
 							"inputs": [
 								{
-									"referenceName": "DS_DT_temperatura_dinamico",
+									"referenceName": "DS_OR_GitHub_humedad",
 									"type": "DatasetReference",
 									"parameters": {
-										"periodo": {
+										"year": {
 											"value": "@item()",
 											"type": "Expression"
 										}
@@ -144,7 +143,7 @@
 							],
 							"outputs": [
 								{
-									"referenceName": "DS_Refined_temperatura_parquet",
+									"referenceName": "DS_Refined_humedad_parquet",
 									"type": "DatasetReference",
 									"parameters": {
 										"periodo": {
