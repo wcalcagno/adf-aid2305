@@ -2,7 +2,7 @@
 	"name": "DS_DT_humedad",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "ADLS_WCALCAGNO",
+			"referenceName": "adls_mafer",
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
