@@ -23,8 +23,9 @@
 			],
 			"transformations": [],
 			"scriptLines": [
-				"source(allowSchemaDrift: true,",
-				"     validateSchema: false,",
+				"source(allowSchemaDrift: false,",
+				"     validateSchema: true,",
+				"     limit: 100,",
 				"     ignoreNoFilesFound: false) ~> source1",
 				"source1 sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
