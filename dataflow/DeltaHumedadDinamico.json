@@ -16,7 +16,7 @@
 			"transformations": [],
 			"scriptLines": [
 				"parameters{",
-				"     periodo as string[] (['1951','1952'])",
+				"     periodo as string ('1951')",
 				"}",
 				"source(useSchema: false,",
 				"     allowSchemaDrift: true,",
