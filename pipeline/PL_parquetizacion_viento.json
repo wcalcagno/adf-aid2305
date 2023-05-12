@@ -48,6 +48,104 @@
 								"enableStaging": false,
 								"translator": {
 									"type": "TabularTranslator",
+									"mappings": [
+										{
+											"source": {
+												"name": "time",
+												"type": "String",
+												"physicalType": "String"
+											},
+											"sink": {
+												"name": "time",
+												"type": "String",
+												"physicalType": "UTF8"
+											}
+										},
+										{
+											"source": {
+												"name": "latitud",
+												"type": "String",
+												"physicalType": "String"
+											},
+											"sink": {
+												"name": "latitud",
+												"type": "String",
+												"physicalType": "UTF8"
+											}
+										},
+										{
+											"source": {
+												"name": "longitud",
+												"type": "String",
+												"physicalType": "String"
+											},
+											"sink": {
+												"name": "longitud",
+												"type": "String",
+												"physicalType": "UTF8"
+											}
+										},
+										{
+											"source": {
+												"name": "dd_Valor",
+												"type": "String",
+												"physicalType": "String"
+											},
+											"sink": {
+												"name": "dd_Valor",
+												"type": "String",
+												"physicalType": "UTF8"
+											}
+										},
+										{
+											"source": {
+												"name": "ff_Valor",
+												"type": "String",
+												"physicalType": "String"
+											},
+											"sink": {
+												"name": "ff_Valor",
+												"type": "String",
+												"physicalType": "UTF8"
+											}
+										},
+										{
+											"source": {
+												"name": "VRB_Valor",
+												"type": "String",
+												"physicalType": "String"
+											},
+											"sink": {
+												"name": "VRB_Valor",
+												"type": "String",
+												"physicalType": "UTF8"
+											}
+										},
+										{
+											"source": {
+												"name": "CodigoNacional",
+												"type": "String",
+												"physicalType": "String"
+											},
+											"sink": {
+												"name": "CodigoNacional",
+												"type": "String",
+												"physicalType": "UTF8"
+											}
+										},
+										{
+											"source": {
+												"name": "nombreEstacion",
+												"type": "String",
+												"physicalType": "String"
+											},
+											"sink": {
+												"name": "nombreEstacion",
+												"type": "String",
+												"physicalType": "UTF8"
+											}
+										}
+									],
 									"typeConversion": true,
 									"typeConversionSettings": {
 										"allowDataTruncation": true,
