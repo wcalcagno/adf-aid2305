@@ -1,0 +1,11 @@
+{
+	"name": "PL_parquetizacion_viento",
+	"properties": {
+		"parameters": {
+			"periodo": {
+				"type": "array"
+			}
+		},
+		"annotations": []
+	}
+}
