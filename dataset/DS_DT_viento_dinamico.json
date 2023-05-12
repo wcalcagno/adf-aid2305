@@ -20,7 +20,7 @@
 					"type": "Expression"
 				},
 				"folderPath": {
-					"value": "@concat('Datos-CambioClimatico/main/output/viento_dmc',dataset().year)",
+					"value": "@concat('Datos-CambioClimatico/main/output/viento_dmc'\n        ,dataset().year\n    )",
 					"type": "Expression"
 				},
 				"fileSystem": "landing"
