@@ -145,7 +145,13 @@
 							"outputs": [
 								{
 									"referenceName": "DS_Refined_temperatura_parquet",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"periodo": {
+											"value": "@item()",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						}
