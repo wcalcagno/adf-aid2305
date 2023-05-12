@@ -1,5 +1,5 @@
 {
-	"name": "DS_OR_GitHub_humedad",
+	"name": "DS_OR_GitHub_humedad_dinamico",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "GitHub_MinCiencias",
