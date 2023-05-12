@@ -16,12 +16,13 @@
 			"location": {
 				"type": "HttpServerLocation",
 				"relativeUrl": {
-					"value": "@concat('Datos-CambioClimatico/main/output/viento_dmc/',dataset().year,'/',dataset().year,'_viento_dmc.csv')",
+					"value": "@concat('Datos-CambioClimatico/main/output/viento_dmc/',\n\tdataset().year,\n\t'/',\n\tdataset().year,\n\t'_viento_dmc.csv'\n)",
 					"type": "Expression"
 				}
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
+			"firstRowAsHeader": true,
 			"quoteChar": "\""
 		},
 		"schema": []
