@@ -163,6 +163,9 @@
 				"type": "array"
 			}
 		},
+		"folder": {
+			"name": "silver"
+		},
 		"annotations": []
 	}
 }

@@ -1,0 +1,87 @@
+{
+	"name": "Orquestador_parquetizacion",
+	"properties": {
+		"activities": [
+			{
+				"name": "Execute Viento",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "PL_parquetizacion_viento",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"periodo": {
+							"value": "@pipeline().parameters.per_orquestacion",
+							"type": "Expression"
+						}
+					}
+				}
+			},
+			{
+				"name": "Execute Humedad",
+				"type": "ExecutePipeline",
+				"dependsOn": [
+					{
+						"activity": "Execute Viento",
+						"dependencyConditions": [
+							"Completed"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "PL_parquetizacion_humedad",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"periodo": {
+							"value": "@pipeline().parameters.per_orquestacion",
+							"type": "Expression"
+						}
+					}
+				}
+			},
+			{
+				"name": "Execute Temperatura",
+				"type": "ExecutePipeline",
+				"dependsOn": [
+					{
+						"activity": "Execute Humedad",
+						"dependencyConditions": [
+							"Completed"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "PL_parquetizacion_temperatura",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"periodo": {
+							"value": "@pipeline().parameters.per_orquestacion",
+							"type": "Expression"
+						}
+					}
+				}
+			}
+		],
+		"parameters": {
+			"per_orquestacion": {
+				"type": "array"
+			}
+		},
+		"folder": {
+			"name": "silver"
+		},
+		"annotations": []
+	}
+}
