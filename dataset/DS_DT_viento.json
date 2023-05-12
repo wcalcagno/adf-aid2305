@@ -2,7 +2,7 @@
 	"name": "DS_DT_viento",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "ADLS_WCALCAGNO",
+			"referenceName": "adls_ddalenz",
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
@@ -26,7 +26,7 @@
 					"value": "@concat(\n    'Datos-CambioClimatico/main/output/viento_dmc/',\n    dataset().periodo\n)",
 					"type": "Expression"
 				},
-				"fileSystem": "landing"
+				"fileSystem": "bronze"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
