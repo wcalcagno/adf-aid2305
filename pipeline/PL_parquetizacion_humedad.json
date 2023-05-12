@@ -29,9 +29,8 @@
 								"source": {
 									"type": "DelimitedTextSource",
 									"storeSettings": {
-										"type": "AzureBlobFSReadSettings",
-										"recursive": true,
-										"enablePartitionDiscovery": false
+										"type": "HttpReadSettings",
+										"requestMethod": "GET"
 									},
 									"formatSettings": {
 										"type": "DelimitedTextReadSettings"
@@ -132,10 +131,10 @@
 							},
 							"inputs": [
 								{
-									"referenceName": "DS_DT_humedad",
+									"referenceName": "DS_OR_GitHub_humedad_dinamico",
 									"type": "DatasetReference",
 									"parameters": {
-										"periodo": {
+										"year": {
 											"value": "@item()",
 											"type": "Expression"
 										}
