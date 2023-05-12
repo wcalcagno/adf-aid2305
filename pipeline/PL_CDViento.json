@@ -157,7 +157,7 @@
 							},
 							"inputs": [
 								{
-									"referenceName": "DS_OR_GitHub_viento",
+									"referenceName": "DS_OR_GitHub_viento_dinamico",
 									"type": "DatasetReference",
 									"parameters": {
 										"year": {

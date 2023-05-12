@@ -1,5 +1,5 @@
 {
-	"name": "DS_OR_GitHub_viento",
+	"name": "DS_OR_GitHub_viento_dinamico",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "GitHub_MinCiencias",
