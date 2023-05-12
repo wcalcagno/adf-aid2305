@@ -1,0 +1,33 @@
+{
+	"name": "DS_OR_GitHub_viento",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "GitHub_MinCiencias",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"year": {
+				"type": "string"
+			}
+		},
+		"folder": {
+			"name": "DS_Viento"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": {
+					"value": "@concat(\n    'Datos-CambioClimatico/main/output/viento_dmc/',\n    dataset().year,\n    '/',\n    dataset().year,\n    '_viento_dmc.csv'\n)",
+					"type": "Expression"
+				}
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}

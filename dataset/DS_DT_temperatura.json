@@ -1,0 +1,27 @@
+{
+	"name": "DS_DT_temperatura",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ADLS_WCALCAGNO",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "DS_Estaticos"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "1951_temperatura_dmc.csv",
+				"folderPath": "Datos-CambioClimatico/main/output/temperatura_dmc/1951",
+				"fileSystem": "landing"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
