@@ -79,6 +79,9 @@
 				"type": "array"
 			}
 		},
+		"folder": {
+			"name": "bronce"
+		},
 		"annotations": []
 	}
 }
