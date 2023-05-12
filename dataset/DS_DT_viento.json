@@ -26,7 +26,7 @@
 					"value": "@concat(\n    'Datos-CambioClimatico/main/output/viento_dmc/',\n    dataset().periodo\n)",
 					"type": "Expression"
 				},
-				"fileSystem": "landing"
+				"fileSystem": "blandingbronce"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
