@@ -1,0 +1,32 @@
+{
+	"name": "DS_Refined_humedad_parquet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ADLS_DPASTORINI",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"periodo": {
+				"type": "string"
+			}
+		},
+		"folder": {
+			"name": "DS_Humedad"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@concat(\n    'humedad/',\n    dataset().periodo,\n    'snappy.parquet'\n)",
+					"type": "Expression"
+				},
+				"folderPath": "parquet_climatico",
+				"fileSystem": "refinedsilver"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
