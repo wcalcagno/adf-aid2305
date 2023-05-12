@@ -2,7 +2,7 @@
 	"name": "DS_DT_viento",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "ADLS_WCALCAGNO",
+			"referenceName": "ADLS_DPASTORINI",
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
