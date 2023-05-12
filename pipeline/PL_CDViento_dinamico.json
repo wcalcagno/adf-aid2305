@@ -57,90 +57,98 @@
 									"mappings": [
 										{
 											"source": {
+												"name": "time",
 												"type": "String",
-												"ordinal": 1
+												"physicalType": "String"
 											},
 											"sink": {
+												"name": "time",
 												"type": "String",
-												"physicalType": "String",
-												"ordinal": 1
+												"physicalType": "String"
 											}
 										},
 										{
 											"source": {
+												"name": "latitud",
 												"type": "String",
-												"ordinal": 2
+												"physicalType": "String"
 											},
 											"sink": {
+												"name": "latitud",
 												"type": "String",
-												"physicalType": "String",
-												"ordinal": 2
+												"physicalType": "String"
 											}
 										},
 										{
 											"source": {
+												"name": "longitud",
 												"type": "String",
-												"ordinal": 3
+												"physicalType": "String"
 											},
 											"sink": {
+												"name": "longitud",
 												"type": "String",
-												"physicalType": "String",
-												"ordinal": 3
+												"physicalType": "String"
 											}
 										},
 										{
 											"source": {
+												"name": "dd_Valor",
 												"type": "String",
-												"ordinal": 4
+												"physicalType": "String"
 											},
 											"sink": {
+												"name": "dd_Valor",
 												"type": "String",
-												"physicalType": "String",
-												"ordinal": 4
+												"physicalType": "String"
 											}
 										},
 										{
 											"source": {
+												"name": "ff_Valor",
 												"type": "String",
-												"ordinal": 5
+												"physicalType": "String"
 											},
 											"sink": {
+												"name": "ff_Valor",
 												"type": "String",
-												"physicalType": "String",
-												"ordinal": 5
+												"physicalType": "String"
 											}
 										},
 										{
 											"source": {
+												"name": "VRB_Valor",
 												"type": "String",
-												"ordinal": 6
+												"physicalType": "String"
 											},
 											"sink": {
+												"name": "VRB_Valor",
 												"type": "String",
-												"physicalType": "String",
-												"ordinal": 6
+												"physicalType": "String"
 											}
 										},
 										{
 											"source": {
+												"name": "CodigoNacional",
 												"type": "String",
-												"ordinal": 7
+												"physicalType": "String"
 											},
 											"sink": {
+												"name": "CodigoNacional",
 												"type": "String",
-												"physicalType": "String",
-												"ordinal": 7
+												"physicalType": "String"
 											}
 										},
 										{
 											"source": {
+												"name": "nombreEstacion",
 												"type": "String",
-												"ordinal": 8
+												"physicalType": "String"
 											},
 											"sink": {
+												"name": "nombreEstacion",
 												"type": "String",
-												"physicalType": "String",
-												"ordinal": 8
+												"physicalType": "String"
 											}
 										}
 									],
