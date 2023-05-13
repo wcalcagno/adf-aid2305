@@ -55,7 +55,11 @@
 				"     preCommands: [],",
 				"     postCommands: [],",
 				"     skipDuplicateMapInputs: true,",
-				"     skipDuplicateMapOutputs: true) ~> Delta1"
+				"     skipDuplicateMapOutputs: true,",
+				"     partitionBy('key',",
+				"          1,",
+				"          ERROR_FUNCTION('')",
+				"     )) ~> Delta1"
 			]
 		}
 	}
