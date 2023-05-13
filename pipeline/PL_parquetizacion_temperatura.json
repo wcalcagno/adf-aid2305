@@ -53,7 +53,7 @@
 										{
 											"source": {
 												"name": "time",
-												"type": "String",
+												"type": "DateTime",
 												"physicalType": "String"
 											},
 											"sink": {
@@ -65,7 +65,7 @@
 										{
 											"source": {
 												"name": "latitud",
-												"type": "String",
+												"type": "Double",
 												"physicalType": "String"
 											},
 											"sink": {
@@ -77,7 +77,7 @@
 										{
 											"source": {
 												"name": "longitud",
-												"type": "String",
+												"type": "Double",
 												"physicalType": "String"
 											},
 											"sink": {
@@ -89,7 +89,7 @@
 										{
 											"source": {
 												"name": "Ts_Valor",
-												"type": "String",
+												"type": "Double",
 												"physicalType": "String"
 											},
 											"sink": {
