@@ -41,7 +41,7 @@
 				"     compressionType: 'snappy',",
 				"     compressionLevel: 'Fastest',",
 				"     fileSystem: 'refined',",
-				"     folderPath: 'Delta1',",
+				"     folderPath: 'DeltaParquet',",
 				"     overwrite:true,",
 				"     mergeSchema: true,",
 				"     autoCompact: true,",
