@@ -1,0 +1,11 @@
+{
+	"name": "PL_CD_Rocio",
+	"properties": {
+		"parameters": {
+			"periodo": {
+				"type": "array"
+			}
+		},
+		"annotations": []
+	}
+}
