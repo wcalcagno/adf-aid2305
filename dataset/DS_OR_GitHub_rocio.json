@@ -1,0 +1,33 @@
+{
+	"name": "DS_OR_GitHub_rocio",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "GitHub_MinCiencias",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"year": {
+				"type": "string"
+			}
+		},
+		"folder": {
+			"name": "DS_Rocio"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": {
+					"value": "@concat(\n    'Datos-CambioClimatico/main/output/rocio_dmc/',\n    dataset().year,\n    '/',\n    dataset().year,\n    '_rocio_dmc.csv'\n)",
+					"type": "Expression"
+				}
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
